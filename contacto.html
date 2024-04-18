@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles-contacto.css">
+    <link rel="icon" href="img/xiaomi_logo.png">
+    <script src="https://kit.fontawesome.com/230736d88f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo-xiaomi" src="img/xiaomi_logo.png" alt="imagen del logo del Xiaomi">
+            <ul id="iconos">
+                <li class="iconos-box"><a href="./index.html">Inicio</a></li>
+                <li class="iconos-box"><a href="./contacto.html">Contacto</a></li>
+                <a href="" class="iconos-box"><i class="fa-brands fa-whatsapp"></i></a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <iframe id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6600.856025464525!2d-58.25647!3d-34.186539!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDExJzEyLjEiUyA1OMKwMTUnMTYuMSJX!5e0!3m2!1sen!2sar!4v1712107527896!5m2!1sen!2sar"
+            width="auto" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="box">
+            <div class="info-contacto">
+                <h2>Información de contacto</h2>
+                <p>Domicilio: Calle 123</p>
+                <p>Teléfono: +54 1234-5678</p>
+                <p>Email: developer@hotmail.com</p>
+            </div>
+            <div class="solicitud">
+                <h2>Formulario de contacto</h2>
+                <form action="./enviar.php" method="post">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="menu-footer">
+            <div class="columna">
+                <a href="">Contáctanos</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Guía de usuario</a>
+            </div>
+            <div class="columna">
+                <a href="">Garantía</a>
+                <a href="">Garantía internacional</a>
+                <a href="">Sustentabilidad</a>
+            </div>
+        </div>
+        <div class="developer">Página hecha por Franco Rivera</div>
+    </footer>
+</body>
+
+</html>

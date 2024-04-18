@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+header{
+    background: white;
+    padding: 10px;
+}
+
+.header{
+    display: grid;
+    grid-template-areas: 'logo iconos';
+    padding: 10px 0px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo-xiaomi{
+    grid-area: logo;
+    height: 50px;
+    margin-left: 150px;
+}
+
+#iconos{
+    grid-area: iconos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.iconos-box{
+    margin: 0 10px;
+}
+
+.fa-whatsapp{
+    font-size: 23px;
+}
+
+.iconos-box > a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    color: #ff6900;
+    text-decoration: underline;
+}
+
+#logo-whatsapp{
+    height: 35px;
+}
+
+header ul li {
+    font-size: 20px;
+    list-style: none;
+}
+
+main{
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+h1{
+    color: #ff6900;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.presentacion{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0px 75px 0px;
+    overflow: hidden;
+}
+
+.img-presentacion{
+    height: 600px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 60px 0px 60px;
+}
+
+.colores{
+    display: flex;
+    margin-left: 30px;
+}
+
+.compra{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #ff6900;
+    width: 80%;
+    padding: 16px 18px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: -0.4px;
+    border-radius: 8px;
+}
+
+.colores-box{
+    height: 30px;
+    margin: 0 5px;
+}
+
+.caracteristicas{
+    color: white;
+    background-color: #333;
+    padding: 50px 0px;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.espec-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.descripciones{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.espec1{
+    width: 10%;
+    border-right: 2px solid #ffffff
+}
+
+.espec2{
+    display: inline-block;
+    width: 30%;
+    margin-left: 10px;
+}
+
+footer{
+    background-color: #ff6900;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.columna{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: start;
+    padding: 20px;
+}
+
+.menu-footer a{
+    color: rgb(230, 213, 213);
+}
+
+.developer{
+    text-align: end;
+    font-weight: bolder;
+    background: linear-gradient(to right, #ffffff, #ff0000, #00ff44, #fbff00, #2600ff);
+    background-clip: text;
+    animation: cambio-color 5s infinite; /* Aplica la animación */
+}
+
+.anim-up{
+    animation-duration: 1s;
+    animation-name: fade-up;
+}
+
+.anim-down{
+    animation-duration: 1.5s;
+    animation-name: fade-down;
+}
+
+/*
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+*/
+
+@keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+    }
+  
+    to {
+      margin-left: 1;
+    }
+}
+
+@keyframes fade-down {
+    from {
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+  
+    to {
+      margin-left: 1;
+    }
+}
+
+@keyframes cambio-color {
+    0% { color: #ff0000; }
+    25% { color: #00ff44; }
+    50% { color: #fbff00; }
+    75% { color: #2600ff; }
+    100% { color: #ff0000; }
+}

@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+header{
+    background: white;
+    padding: 10px;
+}
+
+.header{
+    display: grid;
+    grid-template-areas: 'logo iconos';
+    padding: 10px 0px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    position: fixed;
+}
+
+.logo-xiaomi{
+    grid-area: logo;
+    height: 50px;
+    margin-left: 150px;
+}
+
+#iconos{
+    grid-area: iconos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 17px 0px 0px;
+}
+
+.iconos-box{
+    margin: 0 10px;
+}
+
+.fa-whatsapp{
+    font-size: 23px;
+}
+
+.iconos-box > a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    color: #ff6900;
+    text-decoration: underline;
+}
+
+#logo-whatsapp{
+    height: 35px;
+}
+
+header ul li {
+    font-size: 20px;
+    list-style: none;
+}
+
+main{
+    background-color: #ffffff;
+    margin-top: 60px;
+    padding: 0px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 0px 0px 15px 0px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: 50px auto;
+    padding-bottom: 7px;
+}
+
+.info-contacto{
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.solicitud{
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.solicitud form{
+    width: 30%;
+}
+
+#mapa{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+form button{
+    color: white;
+    background-color: #ff6900;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: #ff6900;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    /*position: fixed;
+    bottom: 0;*/
+    width: 100%;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.columna{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: start;
+    padding: 20px;
+}
+
+.menu-footer a{
+    color: rgb(230, 213, 213);
+}
+
+.developer{
+    margin-right: 5px;
+    text-align: end;
+    font-weight: bolder;
+    background: linear-gradient(to right, #ffffff, #ff0000, #00ff44, #fbff00, #2600ff);
+    background-clip: text;
+    animation: cambio-color 5s infinite; /* Aplica la animación */
+}
+
+@keyframes cambio-color {
+    0% { color: #ff0000; }
+    25% { color: #00ff44; }
+    50% { color: #fbff00; }
+    75% { color: #2600ff; }
+    100% { color: #ff0000; }
+}
