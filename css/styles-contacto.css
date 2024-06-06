@@ -1,14 +1,9 @@
-body {
+body{
     margin: 0;
     font-family: "Work Sans", sans-serif;
 }
 
-header {
-    background: white;
-    padding: 10px;
-}
-
-.header {
+.header{
     display: grid;
     grid-template-areas: 'logo iconos';
     padding: 10px 0px;
@@ -17,28 +12,35 @@ header {
     left: 0px;
     background-color: white;
     position: fixed;
+    z-index: 4;
 }
 
-.logo-xiaomi {
+.logo-xiaomi{
     grid-area: logo;
     height: 50px;
     margin-left: 150px;
 }
 
-#iconos {
+#iconos{
     grid-area: iconos;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 17px 0px 0px;
+    margin: 0px;
 }
 
-.iconos-box {
+.iconos-box{
     margin: 0 10px;
 }
 
-.fa-whatsapp {
+.favicons{
     font-size: 23px;
+    color: black;
+}
+
+.iconos-box > a{
+    text-decoration: none;
+    color: black;
 }
 
 .iconos-box>a {
@@ -48,7 +50,7 @@ header {
 
 header a:hover {
     color: #ff6900;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #logo-whatsapp {
