@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -40,19 +40,19 @@
             <div class="solicitud">
                 <h2>Formulario de contacto</h2>
                 <form action="https://formspree.io/f/myyrvlar" method="post">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                    <div class="casillero">
+                        <label for="nombre"></label>
+                        <input class="input-slide" type="text" id="nombre" name="nombre" required placeholder="Nombre y apellido">
                     </div>
-                    <div>
-                        <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" required>
+                    <div class="casillero">
+                        <label for="correo"></label>
+                        <input class="input-slide" type="email" id="correo" name="correo" required placeholder="Correo electrónico">
                     </div>
-                    <div>
-                        <label for="comentario">Comentario:</label>
-                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                    <div class="casillero">
+                        <label for="comentario"></label>
+                        <textarea class="textarea-slide" id="comentario" name="comentario" rows="4" required placeholder="Comentario"></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button class="btn-envia zoom" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
