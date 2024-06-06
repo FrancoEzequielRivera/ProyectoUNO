@@ -3,11 +3,6 @@ body{
     font-family: "Work Sans", sans-serif;
 }
 
-header{
-    background: white;
-    padding: 10px;
-}
-
 .header{
     display: grid;
     grid-template-areas: 'logo iconos';
@@ -17,7 +12,7 @@ header{
     left: 0px;
     background-color: white;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
 }
 
 .logo-xiaomi{
