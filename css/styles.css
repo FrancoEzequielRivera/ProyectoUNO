@@ -33,8 +33,9 @@ body{
     margin: 0 10px;
 }
 
-.fa-whatsapp{
+.favicons{
     font-size: 23px;
+    color: black;
 }
 
 .iconos-box > a{
@@ -45,10 +46,6 @@ body{
 header a:hover{
     color: #ff6900;
     text-decoration: underline;
-}
-
-#logo-whatsapp{
-    height: 35px;
 }
 
 header ul li {
@@ -286,7 +283,7 @@ footer{
 }
 
 .main-de-review{
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: #333;
 }
 
