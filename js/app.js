@@ -36,3 +36,25 @@ document.addEventListener('DOMContentLoaded', function(){
         img3.style.zIndex = '2';
     })
 })
+
+function validarFormulario() {
+    var nombre = document.getElementById('nombre').value;
+    var correo = document.getElementById('correo').value;
+    var comentario = document.getElementById('comentario').value;
+
+    if (nombre.trim() == '' || correo.trim() == '' || comentario.trim() == '') {
+      alert('Por favor, complete todos los campos.');
+      return false;
+    }
+
+    // Validar el formato del correo electrónico
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(correo)) {
+      alert('Por favor, introduzca una dirección de correo electrónico válida.');
+      return false;
+    }
+
+    // Si todo está bien, se puede enviar el formulario
+    alert('¡Formulario enviado con éxito!');
+    return true;
+  }
